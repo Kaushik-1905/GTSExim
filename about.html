@@ -17,17 +17,31 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header>
     <div class="container nav">
-      <h1 class="logo"><img src="image/logo2.png" alt=""></h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#" class="active">About</a>
+
+      <a href="index.html" class="logo">
+        <img src="image/logo2.png" alt="GTS EXIM">
+      </a>
+
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <nav id="nav-menu">
+
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html" class="active">About</a>
         <a href="index.html#services">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+
+
     </div>
   </header>
+
 
   <!-- HERO -->
   <section class="about-hero">
@@ -130,7 +144,7 @@
         <p><i class="ri-mail-line"></i> info@gtsxim.com</p>
 
         <div class="footer-social">
-          <a href="#"><i class="ri-whatsapp-line"></i></a>
+          <a href="#" onclick="openWhatsApp()"><i class="ri-whatsapp-line"></i></a>
           <a href="https://www.instagram.com/gts_exim/"><i class="ri-instagram-line"></i></a>
         </div>
       </div>

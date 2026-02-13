@@ -20,15 +20,25 @@
 
     <header>
         <div class="container nav">
-            <img src="image/logo2.png" class="logo" />
-            <nav>
+
+            <div class="logo">
+                <img src="image/logo2.png">
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="index.html#services">Services</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
+
         </div>
     </header>
+
 
     <section class="hero">
         <img src="image/img-6.jpg" alt="">
@@ -38,8 +48,12 @@
         </div>
     </section>
 
+
+
+
+
     <section class="section">
-        <div class="contact-box">
+        <div class="contact-box d-flex align-items-center">
 
             <div class="contact-info">
                 <p><strong>GTS EXIM – Global Trade Solutions</strong></p>
@@ -74,13 +88,14 @@
             <section class="enquiry-section">
                 <h2>Send Enquiry</h2>
 
-                <form id="contactForm">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e56b4b83-db9f-479b-baaa-69f2805380a6">
                     <input type="text" name="name" placeholder="Your Name" required />
 
                     <input type="email" name="email" placeholder="Your Email" required />
 
                     <!-- Phone with country code -->
-                    <div class="phone-group">
+                    <!-- <div class="phone-group">
                         <select name="country_code" required>
                             <option value="+91">🇮🇳 +91 (India)</option>
                             <option value="+1">🇺🇸 +1 (USA)</option>
@@ -90,7 +105,7 @@
                         </select>
 
                         <input type="tel" name="phone" placeholder="Phone Number" required />
-                    </div>
+                    </div> -->
 
                     <textarea name="message" placeholder="Your Message" required></textarea>
 
@@ -147,7 +162,7 @@
                 <p><i class="ri-mail-line"></i> info@gtsxim.com</p>
 
                 <div class="footer-social">
-                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    <a href="#" onclick="openWhatsApp()"><i class="ri-whatsapp-line"></i></a>
                     <a href="https://www.instagram.com/gts_exim/"><i class="ri-instagram-line"></i></a>
                 </div>
             </div>
@@ -161,6 +176,7 @@
     </footer>
 
     <script src="contact.js"></script>
+
 </body>
 
 </html>
